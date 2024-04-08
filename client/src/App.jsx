@@ -5,7 +5,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0' style={{ backgroundColor: '#010107' }}>
+      <div className='relative z-0' style={{ backgroundColor: '#000003' }}>
 
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />

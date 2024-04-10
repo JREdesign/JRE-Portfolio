@@ -59,60 +59,7 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+
 
 
 const testimonials = [
@@ -158,7 +105,7 @@ const projects = [
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: carrent,
@@ -179,7 +126,7 @@ const projects = [
       },
       {
         name: "scss",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: jobit,
@@ -200,7 +147,7 @@ const projects = [
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: tripguide,
@@ -208,4 +155,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, testimonials, projects };
+export { services, testimonials, projects };

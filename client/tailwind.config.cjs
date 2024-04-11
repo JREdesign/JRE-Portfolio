@@ -11,7 +11,10 @@ module.exports = {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
-        "custom-blue": "#0b1822", // Aquí está tu color personalizado
+        "custom-blue": "#0b1822",
+        "custom-blue2": "#0d2026",
+        "custom-blue3": "#030808",
+        "custom-orange": "#e78009"
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

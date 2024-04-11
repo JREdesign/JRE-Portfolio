@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Axios from "axios";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -14,16 +14,11 @@ const ServiceCard = ({ index, title, icon }) => (
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-custom-blue rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
-          alt='web-development'
+          alt={title}
           className='w-16 h-16 object-contain'
         />
 
@@ -36,6 +31,19 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    // Reemplaza 'http://localhost:3001/services' con la URL de tu backend si es diferente
+    Axios.get('http://localhost:3001/services')
+      .then(response => {
+        setServices(response.data);
+      })
+      .catch(error => {
+        console.error("Hubo un error al cargar los servicios:", error);
+      });
+  }, []); // El array vacío asegura que este efecto se ejecute solo una vez después del montaje inicial
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -48,9 +56,8 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         Apasionado por el Diseño Gráfico y las Artes Gráficas, mi carrera ha sido una constante exploración de nuevas habilidades y desafíos. Esta curiosidad me llevó a expandir mis competencias hacia el Desarrollo Web Full Stack, especializándome en crear experiencias de usuario intuitivas y atractivas a través de mis conocimientos en UI/UX. Con una sólida base en diseño y producción editorial, me he dedicado a fusionar la estética visual con la funcionalidad técnica, buscando siempre superar las expectativas.
-
       </motion.p>
-
+      
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

@@ -1,7 +1,7 @@
-// App.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import Login from "./components/Login"; // Asegúrate de que la ruta sea correcta
+import Dashboard from "./components/Dashboard"; // Importa el componente Dashboard
 
 const App = () => {
   return (
@@ -25,9 +25,11 @@ const App = () => {
           </div>
         }/>
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} /> {/* Añade la ruta del Dashboard aquí */}
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+

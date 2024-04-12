@@ -72,3 +72,15 @@
 .button:hover {
   background: #e4a154;
 }
+.textBlack {
+  color: black;
+}
+.buttonDelete {
+  background-color: #24aa8d; /* Rojo */
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Esto añadirá espacio entre los botones */
+}

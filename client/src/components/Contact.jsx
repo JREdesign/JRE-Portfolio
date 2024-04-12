@@ -63,9 +63,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "JRE design",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "jr.eugercios@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -73,7 +73,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Gracias. Te responderé lo antes posible");
 
           setForm({
             name: "",
@@ -86,7 +86,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Algo fué mal, intentalo de nuevo.");
         }
       );
   };
@@ -132,7 +132,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='¿Qué es lo que quieres decir?'
+              placeholder='¿Qué es lo que quieres decirme?'
               className='bg-custom-blue2 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
             {errors.message && <p className="text-custom-orange">{errors.message}</p>}

@@ -24,7 +24,7 @@ const experienceSchema = mongoose.Schema({
   points: [
     {
       type: String,
-      required: true,
+      required: false,
     },
   ],
 });

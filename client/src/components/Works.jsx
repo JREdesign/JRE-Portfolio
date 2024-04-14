@@ -4,9 +4,9 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import githubIcon from "../assets/github.png"; // Asegúrate de ajustar esta ruta a la ubicación correcta de tu ícono de GitHub
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import githubIcon from "../assets/github.png"; // Asegúrate de que esta ruta sea correcta
+import { SectionWrapper } from "../hoc"; // Asegúrate de que esta ruta sea correcta
+import { fadeIn, textVariant } from "../utils/motion"; // Asegúrate de que estas rutas sean correctas
 
 const ProjectCard = ({
   index,
@@ -55,7 +55,8 @@ const ProjectCard = ({
           {tags.map((tag, idx) => (
             <p
               key={`${name}-${tag.name}-${idx}`}
-              className={`text-[14px] ${tag.color}`}
+              style={tag.color?.startsWith('#') ? { color: tag.color } : {}}
+              className={`text-[14px] ${!tag.color?.startsWith('#') ? tag.color : ''}`}
             >
               #{tag.name}
             </p>
@@ -67,14 +68,13 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const [projects, setProjects] = useState([]); // Estado para almacenar los proyectos
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        // Asegúrate de actualizar esta URL si tu backend se despliega en otro lugar
         const response = await axios.get("http://localhost:3001/works");
-        setProjects(response.data); // Actualiza el estado con los proyectos obtenidos
+        setProjects(response.data);
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
@@ -86,7 +86,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Mi trabajo</p>
+        <p className={`${styles.sectionSubText}`}>Mi trabajo</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos</h2>
       </motion.div>
 
@@ -95,9 +95,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos reales de mi trabajo. 
-          Cada proyecto se describe brevemente con enlaces a repositorios de código y demostraciones en vivo. 
-          Refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de forma eficaz.
+          Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos reales de mi trabajo. Cada proyecto se describe brevemente con enlaces a repositorios de código y demostraciones en vivo. Refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de forma eficaz.
         </motion.p>
       </div>
 

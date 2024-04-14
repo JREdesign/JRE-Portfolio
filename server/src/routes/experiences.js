@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-import { ExperienceModel } from "../models/Experiencies.js";
+import { ExperienceModel } from "../models/Experiences.js";
 
 const router = express.Router();
 

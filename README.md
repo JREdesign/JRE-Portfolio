@@ -14,9 +14,10 @@ Bienvenido al repositorio de mi portfolio web personal.
 
 - Realizada como proyecto MERN en MongoDB, Express, React y Node.js.
 - Un portfolio realizadocon el propósito de enseñar mi trabajo como diseñador y mis primeras andaduras por el desarrollo web inmersiva.
-- Interfaz intuitiva: Diseñada para ser sencilla y ágil de navegar
-- CRUD completo: El usuario del portfolio mediante un pantel de administración crear, modificar, borrar y editar las caracteristicas clave del portfolio siempre que esté logueado con su usuario y contraseña.
-- Login oculto al usuario: El administrador puede loguearse poniendo /login en la barra de navegación, asi el login queda oculto a los usuarios convencionales
+- Interfaz intuitiva: Diseñada para ser sencilla y ágil de navegar.
+- CRUD completo: El usuario del portfolio mediante un pantel de administración crear, modificar, borrar y editar rápidamente y en pocos clicks, las caracteristicas clave del portfolio, siempre que esté logueado con su usuario y contraseña.
+- Permite escalar de manera muy sencilla cualquier conocimiento, tecnologia, proyecto, experiencia laboral o referencias de otras personas.
+- Login oculto al usuario: El administrador puede loguearse poniendo /login en la barra de navegación, asi el login queda oculto a los usuarios convencionales.
 - Accesibilidad garantizada: Nuestro diseño cumple con los estándares de accesibilidad de la W3C, asegurando que todos los usuarios puedan verlo correctamente. 
 - Compromiso con el medio ambiente: Desarrollada con una mentalidad sostenible, empleamos prácticas que buscan reducir las emisiones de CO2, desde la optimización de nuestros procesos hasta la selección consciente de nuestros proveedores.
 

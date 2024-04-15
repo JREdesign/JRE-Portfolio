@@ -54,7 +54,7 @@ El stack tecnológico y herramientas utilizadas:
 Proyecto: https://github.com/JREdesign/JRE-Portfolio
 
 
-![Static Badge](https://img.shields.io/badge/Version_SuperQuizTV-1.0-green) ![Static Badge](https://img.shields.io/badge/Version%20API-3.0-blue)
+![Static Badge](https://img.shields.io/badge/Version_Portfolio-1.0-green) ![Static Badge](https://img.shields.io/badge/Version%20API-1.0-blue)
 
 
 

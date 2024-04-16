@@ -42,7 +42,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <img src={logo} alt='logo' className='w-[50px] h-auto object-contain' />
+
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             JRE &nbsp;
             <span className='sm:block hidden'> | Diseño gráfico y Desarrollo web</span>
@@ -50,18 +51,30 @@ const Navbar = () => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
+            {navLinks.map((nav) => (
+              nav.url ? // Verifica si el navLink tiene una URL
+                <li
+                  key={nav.id}
+                  className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
+                >
+                  {/* Para enlaces externos, utiliza un elemento <a> */}
+                  <a href={nav.url} target="_blank" rel="noopener noreferrer">{nav.title}</a>
+                </li>
+              :
+                <li
+                  key={nav.id}
+                  className={`${
+                    active === nav.title ? "text-white" : "text-secondary"
+                  } hover:text-white text-[18px] font-medium cursor-pointer`}
+                  onClick={() => setActive(nav.title)}
+                >
+                  {/* Para enlaces internos, sigue utilizando <a> */}
+                  <a href={`#${nav.id}`}>{nav.title}</a>
+                </li>
+            ))}
         </ul>
+
+
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img

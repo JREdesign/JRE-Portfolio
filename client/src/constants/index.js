@@ -38,6 +38,11 @@ export const navLinks = [
     id: "contact",
     title: "Contacto",
   },
+  {
+    id: "portfoliodesign",
+    title: "Portfolio Diseño",
+    url: "https://jredesigner.wordpress.com/",
+  },
 ];
 
 const services = [

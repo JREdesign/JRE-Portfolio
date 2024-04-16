@@ -1,28 +1,11 @@
+import linkedInIcon from "../assets/linkedin.png"; // Asume la ruta correcta de tu icono
+import gitHubIcon from "../assets/github.png"; // Asume la ruta correcta de tu icono
+import emailIcon from "../assets/email.png"; // Asume la ruta correcta de tu icono
 import {
   mobile,
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -61,6 +44,24 @@ const services = [
   {
     title: "Diseño UI/UX",
     icon: creator,
+  },
+];
+
+export const socialLinks = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/jorge-rev-eug/",
+    icon: linkedInIcon,
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/JREdesign",
+    icon: gitHubIcon,
+  },
+  {
+    name: "Email",
+    url: "mailto:jr.eugerciosl@gmail.com",
+    icon: emailIcon,
   },
 ];
 

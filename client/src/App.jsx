@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import Login from "./components/Login"; // Asegúrate de que la ruta sea correcta
 import Dashboard from "./components/Dashboard"; // Importa el componente Dashboard
+import Links from "./components/Links";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
               <Contact />
               <StarsCanvas />
             </div>
+            <Links />
           </div>
         }/>
         <Route path="/login" element={<Login />} />

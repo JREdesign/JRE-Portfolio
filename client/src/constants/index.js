@@ -1,6 +1,8 @@
 import linkedInIcon from "../assets/linkedin.png"; // Asume la ruta correcta de tu icono
 import gitHubIcon from "../assets/github.png"; // Asume la ruta correcta de tu icono
 import emailIcon from "../assets/email.png"; // Asume la ruta correcta de tu icono
+import logoutIcon from "../assets/logout.png"; // Añade esto si vas a utilizar un icono de logout
+import adminIcon from "../assets/admin.png"; // Asume la ruta correcta de tu icono
 import {
   mobile,
   backend,
@@ -65,4 +67,4 @@ export const socialLinks = [
   },
 ];
 
-export { services };
+export { services, logoutIcon, adminIcon };

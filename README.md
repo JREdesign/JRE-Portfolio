@@ -47,9 +47,12 @@ El stack tecnológico y herramientas utilizadas:
 
 
 
-<img src="" style="width: 70%;" alt="Imagen 1">
-<img src="" style="width: 70%;" alt="Imagen 2">
-<img src="" style="width: 70%;" alt="Imagen 3">
+<img src="https://imgur.com/vFeFeJx.jpg" style="width: 70%;" alt="Imagen 1">
+<img src="https://imgur.com/Zyo1u1H.jpg" style="width: 70%;" alt="Imagen 2">
+<img src="https://imgur.com/xxBxUBt.jpg" style="width: 70%;" alt="Imagen 3">
+<img src="https://imgur.com/BJP3SVd.jpg" style="width: 70%;" alt="Imagen 4">
+<img src="https://imgur.com/kdf2vMY.jpg" style="width: 70%;" alt="Imagen 5">
+<img src="https://imgur.com/mWy7Fxv.jpg" style="width: 70%;" alt="Imagen 6">
 
 
 Proyecto: https://github.com/JREdesign/JRE-Portfolio

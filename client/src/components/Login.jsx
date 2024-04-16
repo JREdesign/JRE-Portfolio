@@ -24,8 +24,8 @@ const Login = () => {
       window.localStorage.setItem("userID", result.data.userID);
       window.localStorage.setItem("username", username);
 
-      // Redirige al usuario al Dashboard
-      navigate("/dashboard");
+      // Redirige al usuario a la página principal
+      navigate("/");
     } catch (error) {
       console.error("Error de login:", error);
       alert("Fallo al iniciar sesión, verifica tus credenciales.");

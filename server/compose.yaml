@@ -7,15 +7,24 @@
 # You can add other services your application may depend on here, such as a
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
+
 services:
   server:
+    container_name: server
+    image: jreugercios/server:latest  # Nombre completo de la imagen
     build:
       context: .
-    environment:
-      NODE_ENV: production
-    command: npx nodemon src/index.js
     ports:
-      - 3001:3001
+      - "3001:3001"
+    environment:
+      NODE_ENV: development
+      PORT: 3001
+      DB_CONNECTION_STRING: "mongodb+srv://root:1234567890A@portfoliodb.nb2slxf.mongodb.net/portfoliodb?retryWrites=true&w=majority&appName=portfoliodb"
+    command: npx nodemon src/index.js
+
+
+
+
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to

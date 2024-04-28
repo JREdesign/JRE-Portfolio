@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "npm run dev",
+    "start": "serve -s dist -l 5173",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -15,15 +15,15 @@
     "@react-three/fiber": "^8.11.1",
     "axios": "^1.6.8",
     "framer-motion": "^9.0.7",
-    "install": "^0.13.0",
     "maath": "^0.5.2",
-    "npm": "^10.5.2",
+    "nodemon": "^3.1.0",
     "react": "^18.2.0",
     "react-cookie": "^7.1.4",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.6.0",
+    "serve": "14.2.3",  
     "three": "^0.149.0"
   },
   "devDependencies": {
